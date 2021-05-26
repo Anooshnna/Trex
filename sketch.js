@@ -90,6 +90,8 @@ function draw() {
     trex.collide(invisibleGround);
     spawnClouds();
     spawnObstacles();
+    
+    trex.debug = true
   
     if(obstaclesGroup.isTouching(trex)){
         gameState = END;
